@@ -9,48 +9,69 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 h1 {
-    display: flex;
-    justify-content: center;
     margin-top: 20px;
     color: #333;
+}
+
+#game-settings {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#game-settings button {
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+#game-settings button:hover {
+    background-color: #ddd;
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
-    width: 60vh;
+    height: auto;
+    width: auto;
     margin-top: 20px;
 }
 
 .game {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 65vmin;
-    width: 65vmin;
-    gap: 1vmin;
+    display: grid;
+    gap: 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50vh;
+    height: 50vh;
 }
 
 .cell {
-    height: 18vmin;
-    width: 18vmin;
     background-color: #ffebcd;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #333;
-    border-radius: 5px;
-    box-shadow: 3px 3px #333;
-    font-size: 7vmin;
+    font-size: var(--cell-font-size);
     color: #ff6347;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cell:hover {
+    background-color: #ffe4b5;
+    transform: scale(1.05);
 }
 
 #game-info {
@@ -66,9 +87,14 @@ h1 {
     color: #333;
 }
 
+#timer {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
 .button-container {
     display: flex;
-    justify-content: center;
     gap: 10px;
 }
 

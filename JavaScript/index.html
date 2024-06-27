@@ -8,21 +8,19 @@
 </head>
 <body>
   <h1>Tic Tac Toe</h1>
+  <div id="game-settings">
+    <button id="3x3">3x3</button>
+    <button id="4x4">4x4</button>
+    <button id="5x5">5x5</button>
+  </div>
   <div class="container">
-    <div class="game">
-        <div class="cell" data-index="0"></div>
-        <div class="cell" data-index="1"></div>
-        <div class="cell" data-index="2"></div>
-        <div class="cell" data-index="3"></div>
-        <div class="cell" data-index="4"></div>
-        <div class="cell" data-index="5"></div>
-        <div class="cell" data-index="6"></div>
-        <div class="cell" data-index="7"></div>
-        <div class="cell" data-index="8"></div>
+    <div class="game" id="game-board">
+        <!-- Cells will be generated dynamically -->
     </div>
   </div>
   <div id="game-info">
     <p id="game-status">Player X's turn</p>
+    <p id="timer">Time left: <span id="time-left">10</span>s</p>
     <div class="button-container">
       <button id="resetBtn">Reset Game</button>
       <button id="newGameBtn">New Game</button>

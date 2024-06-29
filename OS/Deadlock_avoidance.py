@@ -36,11 +36,11 @@ class BankersAlgorithm:
 processes = ['P0', 'P1', 'P2', 'P3', 'P4']
 available = [3, 3, 2]  # Initial available resources
 max_claim = [
-    [7, 5, 3],
-    [3, 2, 2],
-    [9, 0, 2],
-    [2, 2, 2],
-    [4, 3, 3]
+    [6, 4, 3], 
+    [3, 2, 2], 
+    [9, 1, 2],  
+    [4, 2, 2],  
+    [5, 3, 3]
 ]  # Maximum resources needed by each process
 allocation = [
     [0, 1, 0],
